@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aquamarine;
+        margin: 0px;
+
+    }
+    header{
+        text-align: center;
+        background-color: rgb(72, 201, 201);
+        padding: 10px;
+        width: 420px;
+        margin: auto;
+        margin-top: 10px;
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+    nav{
+        background-color: rgb(128, 216, 187);
+        padding: 5px;
+        border-radius: 2px;
+        box-shadow: 1px 1px 3px rgba(10, 10, 10, 0.377);
+
+    }
+    nav > a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    nav > a:hover{
+        text-decoration: underline;
+        color: blueviolet;
+    }
+    main{
+        background-color: rgb(72, 201, 201);
+        padding: 10px;
+        width: 420px;
+        margin: auto;
+        margin-top: 10px;
+        border: 2px solid ;
+        border-radius: 5px;
+    }
+    footer{
+        background-color: black;
+        padding-left: 25px;
+        color: aliceblue;
+        width: 420px;
+        margin: auto;
+        text-align: center;
+        border-radius: 2px;
+    }
+    #noticia{
+        background-color: rgb(128, 216, 187);
+        padding: 5px;
+        border-radius: 0px 10px 10px  ;
+        box-shadow: 2px 2px 3px rgba(19, 19, 19, 0.295);
+    }
+</style>
+<body>
+    
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticia">
+            <article>
+               <h2>Noticia sobre o Brasil</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis amet optio reiciendis. Amet modi dolore eaque molestias, excepturi velit saepe. Numquam reiciendis quod accusantium nobis ex culpa minus neque cum.</p>
+            </article>
+            <article>
+                <aside>
+                    <p>arquivo escrito por Jose da Silva</p>
+                </aside>                
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p style="font-style: italic;">Desenvolvido por &copy;LucasSilvaCode</p>
+    </footer>
+    
+</body>
+</html>

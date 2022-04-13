@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        a:active{
+            background: violet;
+        }
+        a::after{
+            content: '[link]';
+            color: rgb(183, 120, 241);
+            font-weight: normal;
+        }
+        a::before{
+            content: '→';
+            color: cadetblue;
+            font-weight: normal;
+        }
+        .diferenciada::after{
+            content: '←';
+        }
+        .diferenciada::before{
+            content: '🔥';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando links</h1>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_delegation" target="_blank">Repoditorio Github</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Yj9-N9BEVeM" target="_blank" class="diferenciada">Canal do you tube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vCgMeNCFLEU&list=RDGMEMYH9CUrFO7CfLJpaD7UR85w&index=4" target="_blank" >Site curso em video</a></li>
+        
+    </ul>
+    
+</body>
+</html>
