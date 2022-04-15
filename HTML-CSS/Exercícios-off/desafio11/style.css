@@ -3,39 +3,81 @@
     margin: 0;
     padding: 0;
 }
-body{
-    height: 97vh;
-    background-image: url(imagens/background001.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+:root{
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+} 
+html,body{
+    min-height: 100vh;
+    background-color: lightgray;
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
-    color: white;
-    font-family: 'Passion One', sans-serif;
-    padding-bottom: 80px;
-    padding-top: 20px;
+    color: white; 
     text-align: center;
     
-}section{
-    background-color:#fff;
 }
-.destaque{
-    background-color: transparent;
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 4em;
+}
+header p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2em;
+
 }
 section p{
-    padding-bottom: 20px;
-    margin: 0px 0px 60px 40px;
-    line-height: 2em;
-    font-family: 'Sriracha', sans-serif;;
-    font-size: xx-large;
-
+    padding-bottom: 3em;
+}
+.semDestaque{
+    background-color: white;
+    color: black;
+}
+.destaque{
+    background-color: black;
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.577);
+}
+section.destaque p{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.247);
+    text-shadow: 1px 1px 0px black;
+}
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center ;
+    background-size:cover;
+}
+#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center ;
+    background-size:cover;
 }
 
 footer{
-    background-color: aquamarine ;
+    background-color: black;
+    color: white;
     text-align: center;
+    padding: 10px;
 
 }
